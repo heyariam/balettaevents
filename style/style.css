@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto serif', sans-serif;
+}
+
+img {
+  width: 50%;
+}
+
+.navmenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navmenu .ul, .navmenu li, .navmenu a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: #333333;
+}
+
+.navmenu .ul, .navmenu li, .navmenu a:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.index {
+  height: 80vh;
+  background-image: url(./media/cabecera1.jpg);
+  background-size: cover;
+  opacity: .8;
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat 3, 1fr;
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: repeat 5, 1fr;
+      grid-template-rows: repeat 5, 1fr;
+}
+
+/*container */
+.container {
+  background-color: #333333;
+  opacity: .8;
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat 3, 1fr;
+      grid-template-columns: repeat(3 1fr);
+  -ms-grid-rows: repeat 5, 1fr;
+      grid-template-rows: repeat 5, 1fr;
+}
+
+.content {
+  margin: 30px 40px 30px 40px;
+  padding: 30px 40px 30px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  -webkit-box-flex: 35%;
+      -ms-flex: 35%;
+          flex: 35%;
+}
+
+/* contenido - index */
+.texto-bienvenida {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.texto-bienvenida h1 {
+  font-family: sans-serif;
+  font-size: 40px;
+  color: #ece8df;
+}
+
+/* contenido - contacto*/
+.contacto .contacto {
+  height: 100vh;
+  background-image: url(../media/contacto.jpg);
+  background-size: cover;
+  opacity: .8;
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat 3, 1fr;
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: repeat 4, 1fr;
+      grid-template-rows: repeat 4, 1fr;
+}
+
+.contacto .images {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.contacto .formulario {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+.contacto .mapa {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+/* Nosotros */
+.infoNosotros .infoNosotros {
+  margin: 30px 40px 30px 40px;
+  padding: 30px 40px 30px 40px;
+}
+
+.infoNosotros .foto-equipo {
+  margin: 30px 20px 5px 20px;
+  padding: 30px 20px 5px 20px;
+  height: 50%;
+  width: 50%;
+}
+
+.infoNosotros .foto-vision {
+  margin: 30px 20px 5px 20px;
+  padding: 30px 20px 5px 20px;
+  height: 50%;
+  width: 50%;
+}
+
+.infoNosotros .foto-mision {
+  margin: 30px 20px 5px 20px;
+  padding: 30px 20px 5px 20px;
+  height: 50%;
+  width: 50%;
+}
+
+/* servicios */
+.servicios__fotos {
+  margin: 30px 20px 5px 20px;
+  padding: 30px 20px 5px 20px;
+}
+
+.service__1 {
+  padding: 30px 70px 0px 0px;
+  height: 50%;
+  width: 50%;
+}
+
+.service__2 {
+  padding: 30px 70px 0px 0px;
+  height: 50%;
+  width: 50%;
+}
+
+.service__3 {
+  padding: 30px 70px 70px 0px;
+  height: 50%;
+  width: 50%;
+}
+
+/* historias */
+.historias {
+  list-style: none;
+  padding-bottom: 15px;
+}
+
+.story1 {
+  margin: 10px 10px 10px 10px;
+  padding: 10px 5px 10px 5px;
+  height: 50%;
+  width: 50%;
+}
+
+/* Blog */
+.blog .blog {
+  height: 50%;
+  width: 50%;
+}
+
+.blog .blogList {
+  list-style: none;
+  padding-bottom: 15px;
+}
+
+/* contacto */
+.images__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.images__contact .contacto__1 {
+  height: 200px;
+  width: 400px;
+}
+
+.images__contact .contacto__2 {
+  height: 200px;
+  width: 400px;
+}
+
+.images__contact .contacto__3 {
+  height: 200px;
+  width: 400px;
+}
+
+.images__contact .images__contact ul {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */
